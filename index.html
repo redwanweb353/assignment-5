@@ -50,7 +50,7 @@
         
     </header>
 
-    <main class="w-11/12 mx-auto grid md:grid-cols-12 gap-[30px] mt-[55px] m-[55px] ">
+    <main class="w-11/12 mx-auto grid md:grid-cols-12 gap-[30px] mt-[55px] pb-[55px]  ">
         <section class="grid grid-cols-1 col-span-9 gap-[30px]  md:grid-cols-3">
             <div class="shadow-md card-section p-8 bg-white rounded-[12px]">
                 <div class="icon flex justify-between">
@@ -225,7 +225,7 @@
                     <h1 class="font-bold text-[24px]" >Bangladesh Railway Helpline </h1>
                     <p class="text-[#5C5C5C] text-[18px]">Bangladesh Railway</p>
                     <h1 class="font-bold text-[32px] mt-6">163</h1>
-                    <button class=" mb-6 bg-[#F2F2F2] btn text-[#5C5C5C] text-[18px] rounded-[9999px] border-none">All</button>
+                    <button class=" mb-6 bg-[#F2F2F2] btn text-[#5C5C5C] text-[18px] rounded-[9999px] border-none">Travel</button>
                 </div>
                 <div class="card-btn flex gap-2">
                     <button class="btn w-[50%] bg-white border-[#D4D6D5] text-[#5C5C5C] rounded-[8px] "><i class="fa-regular fa-copy"></i>Copy</button>
@@ -234,29 +234,24 @@
             </div>
         </section>
         
-        <aside class="shadow-md  md:col-span-3 p-6  call-history bg-white  rounded-[12px]">
-            <div class="flex justify-between mb-4">
-                <p class="text-[20px] font-medium"> <i class="fa-regular fa-clock text-[#5C5C5C]"></i> Call History</p>
-                <button class="btn  bg-[#00A63E] border-none text-white rounded-[50px]"> Clear</button>
+        <aside class="shadow-md  md:col-span-3 p-6   bg-white  rounded-[12px]">
+           <div >
+                <div  >
+                    <div class="flex justify-between mb-4">
+                        <p class="text-[20px] font-medium"> <i class="fa-regular fa-clock text-[#5C5C5C]"></i> Call History</p>
+                        <button id="clear-btn" class="btn  bg-[#00A63E] border-none text-white rounded-[50px]"> Clear</button>
+                    </div>
+                </div>
+                <div id="history-section">
+
+                </div>
+                
+                    
+                   
+               
             </div>
-            <div class="history flex justify-between items-center bg-[#fafafa] p-4 rounded-[8px] mb-2">
-                <div>
-                    <h2 class="font-semibold text-[18px] ">Fire Service Number</h2>
-                    <p class="text-[#5c5c5c] text-[18px]  ">999</p>
-                </div>
-                <div>
-                    <p>11:36:58 AM</p>
-                </div>
-            </div>
-            <div class="history flex justify-between items-center bg-[#fafafa] p-4 rounded-[8px] mb-2">
-                <div>
-                    <h2 class="font-semibold text-[18px] ">Ambulance Service</h2>
-                    <p class="text-[#5c5c5c] text-[18px]  ">1994-999999</p>
-                </div>
-                <div>
-                    <p>11:36:58 AM</p>
-                </div>
-            </div>
+            
+            
         </aside> 
     </main>
 
