@@ -57,5 +57,17 @@ document.getElementById("clear-btn").addEventListener('click',function(){
 })
 
 
-
+const copyButtons = document.getElementsByClassName("copy-button")
+const copyCount = document.getElementById("copy-count")
+let currentCopyNumber = 0 
+for ( let copyButton of copyButtons){
+        copyButton.addEventListener('click', function () {
+        currentCopyNumber++;
+        copyCount.innerText=currentCopyNumber;
+        const copyText = copyButton.parentNode.parentNode.childNodes[3].childNodes[5].innerText  
+        navigator.clipboard.writeText(copyText)
+        alert(` '${copyText}' is copied in clipboard ✅ `)
+    
+        })
+}
 
